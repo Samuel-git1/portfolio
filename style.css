@@ -82,8 +82,9 @@ body {
 
 @media only screen and (max-width: 600px) {
     .workspace {
-        height: 93%;
-        width: 93%;
+        height: 95%;
+        width: 95%;
+        background-color: transparent;
         grid-template-columns: 1fr;
         grid-template-rows: min-content min-content auto;
     }
@@ -98,6 +99,8 @@ body {
         grid-row: 2;
         width: 100px;
         height: 100px;
+        background-color: white;
+        border-color: transparent;
     }
 
     .info{
