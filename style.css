@@ -1,0 +1,106 @@
+body {
+    /* background-color: rgb(20, 20, 20); */
+    background-color: rgb(150, 150, 200);
+    width: 98vw;
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.workspace {
+    /* background-color: rgb(50, 50, 50); */
+    background-color: rgb(200, 200, 200);
+    ;
+    margin: auto;
+    border-radius: 10px;
+    display: grid;
+}
+
+.logo {
+    /* background-color: white; */
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.icon {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.icon:hover {
+    background-color: white;
+    scale: 1.05;
+}
+
+.icon_container{
+    display: grid;
+    height: fit-content;
+    width: fit-content;
+    margin: 0;
+    /* background-color: red; */
+    column-gap: 2%;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .workspace {
+        width: 85%;
+        height: 88%;
+        padding: 10px;
+        grid-template-columns: 35% 60%;
+        grid-template-rows: 40% 50%;
+        column-gap: 5px;
+    }
+
+    .logo {
+        width: 300px;
+        height: 100%;
+        margin: 30px 30px auto 30px;
+        grid-area: 1 / 1 / span 2 / span 1;
+    }
+
+    .info {
+        margin-top: 20px;
+        grid-area: 2 / 2 / span 1 /span 1;
+        /* background-color: white; */
+        font-weight: 600;
+        font-style: bold;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .icon {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .workspace {
+        height: 93%;
+        width: 93%;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content auto;
+    }
+
+    .logo {
+        width: auto;
+        height: 100px;
+        margin: 25px 5px 10px 5px;
+    }
+
+    .icon{
+        grid-row: 2;
+        width: 100px;
+        height: 100px;
+    }
+
+    .info{
+        grid-row: 3;
+    }
+}
