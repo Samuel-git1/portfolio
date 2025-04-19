@@ -1,0 +1,85 @@
+@media only screen and (min-width: 600px) {
+
+    .workspace {
+        width: 100%;
+        height: 88%;
+        padding: 0;
+        grid-template-columns: 35% 60%;
+        grid-template-rows: 40% 50%;
+        column-gap: 5px;
+    }
+
+    .logo {
+        scale: 75%;
+        margin: auto;
+        grid-area: 1 / 1 / span 2 / span 1;
+    }
+
+    .info {
+        height: fit-content;
+        width: 100%;
+        margin: auto;
+        grid-area: 2 / 2 / span 2 /span 1;
+        color: black;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 0 50px 0 50px;
+        text-align: left;
+        margin-top: 60px;
+        border: 5px solid black;
+        background-color: white;
+    }
+
+    .icon {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .body{
+        background-color: rgb(20, 20, 20);
+        overflow-x: hidden;
+    }
+
+    .workspace {
+        height: 100%;
+        width: 95%;
+        background-color: transparent;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 20% max-content auto;
+    }
+
+    .bg-image{
+        opacity: 0;
+    }
+
+    .logo {
+        width: 130px;
+        height: 130px;
+        margin: 20px auto;
+        grid-row: 1;
+    }
+
+    .title{
+        grid-row: 2;
+    }
+
+    .icon{
+        grid-row: 2;
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border-color: transparent;
+        font-size: 15px;
+    }
+
+    .info{
+        grid-row: 3;
+    }
+
+    .contact-div{
+        grid-column: 1;
+        grid-row: 4;
+    }
+}
